@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellifera | Honey Shop</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/" class="header__logo">
+                <img 
+                src="./images/logo.svg" 
+                alt="Mellifera" 
+                width="234" height="48" loading="lazy"
+                class="logo__image">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Pages</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Products</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Blog</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link">Portfolio</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="/" class="header__cart-link">
+                    <svg viewBox="0 0 20.9951 18.2762" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" fill="none" customFrame="#000000">
+	                 <path id="Vector" d="M18.9583 14.8853L16.3367 14.8853L13.26 17.9837C12.8483 18.3737 12.22 18.3737 11.8083 17.9837C11.4183 17.572 11.4183 16.9437 11.8083 16.532L13.455 14.8853L7.54 14.8853L9.18667 16.532C9.57667 16.9437 9.57667 17.572 9.18667 17.9837C8.79667 18.3737 8.14667 18.3737 7.75667 17.9837L4.65833 14.8853L2.03667 14.8853C0.91 14.8853 0 13.9753 0 12.8487L0 9.81534C0 9.25201 0.455 8.79701 1.01833 8.79701L1.495 8.79701L2.49167 2.38367C2.68667 0.997006 3.87833 -0.0213274 5.28667 0.000339305L15.73 0.000339305C17.1167 -0.0213274 18.3083 0.997006 18.5033 2.38367L19.5 8.79701L19.9767 8.79701C20.54 8.79701 20.995 9.25201 20.995 9.81534L20.995 12.8487C20.995 13.9753 20.085 14.8853 18.9583 14.8853ZM2.03667 10.8337L2.03667 12.8487L18.9583 12.8487L18.9583 10.8337L2.03667 10.8337ZM17.4417 8.79701L16.51 2.68701C16.445 2.29701 16.12 2.01534 15.73 2.01534L5.28667 2.01534C4.89667 2.01534 4.55 2.29701 4.50667 2.68701L3.55333 8.79701L17.4417 8.79701ZM6.78167 4.39867L6.78167 6.41367C6.78167 6.97701 7.23667 7.43201 7.8 7.43201C8.34167 7.43201 8.79667 6.97701 8.79667 6.41367L8.79667 4.39867C8.79667 3.83534 8.34167 3.38034 7.8 3.38034C7.23667 3.38034 6.78167 3.83534 6.78167 4.39867ZM11.505 4.39867L11.505 6.41367C11.505 6.97701 11.96 7.43201 12.5233 7.43201C13.0867 7.43201 13.5417 6.97701 13.5417 6.41367L13.5417 4.39867C13.5417 3.83534 13.0867 3.38034 12.5233 3.38034C11.96 3.38034 11.505 3.83534 11.505 4.39867Z" fill="rgb(91,88,88)" fill-rule="nonzero" transform="matrix(1,0,0,-1,0,18.2762)" />
+                    </svg>
+                </a>
+                <a href="/" class="header__contact-button hidden-mobile">CONTACT</a>
+                <button 
+                 class="header__burger-button burger-button visible-mobile"
+                 type="button"
+                 onclick="mobileOverlay.showModal()"
+                >
+                 <span class="visually-hidden">Open navigation menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="banner container">
+            <div class="banner__main-block">
+                <div class="banner__content">
+                 <h1 class="banner__title">HONEY BEE</h1>
+                 <p class="banner__subtitle">Fresh & sweet as honey.</p>
+                 <p class="banner__description">Lorem ipsum dolor sit amet, sint nostrum mea ut, vel semper vidisse eu usu temporibus disputationi voluptatibus in ei est possit salutandi abhorrea acusa</p>
+                 <a href="/" class="banner__button">VIEW MORE</a>
+                </div>
+                <div class="banner__media">
+                 <img 
+                 src="./images/honey-jar.svg" 
+                 alt="jar of honey" 
+                 width="760" height="805" loading="lazy"
+                 class="banner__image">
+            </div>
+            </div>
+            <div class="banner__chat">
+                <button 
+                 class="banner__chat-button"
+                 type="button"
+                >
+                 <svg viewBox="0 0 18.7354 19.9844" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.735352" height="19.984375" fill="currentColor" customFrame="#000000">
+	               <path id="Vector" d="M1.62373 19.9844C0.749415 19.9844 0.249805 19.6097 0.124903 18.9852C-0.249805 17.986 0.749415 17.3614 1.12412 17.1116C1.87354 16.612 2.24825 16.2373 2.37315 15.8626C2.37315 15.6128 2.24825 15.363 1.99844 14.9883C1.99844 14.9883 1.99844 14.8634 1.87354 14.8634C0.624513 13.2397 0 11.2412 0 9.24279C0 4.12178 4.24669 0 9.36769 0C14.4887 0 18.7354 4.12178 18.7354 9.24279C18.7354 14.3638 14.4887 18.4856 9.36769 18.4856C8.74317 18.4856 8.11866 18.3607 7.49415 18.2358C4.24669 19.8595 1.87354 19.9844 1.87354 19.9844C1.74864 19.9844 1.74863 19.9844 1.62373 19.9844ZM4.12178 13.6144C4.74629 14.4887 4.9961 15.4879 4.8712 16.3622C4.8712 16.4871 4.74629 16.7369 4.74629 16.8618C5.37081 16.612 5.99532 16.3622 6.74474 15.9875C6.99454 15.8626 7.24435 15.7377 7.49415 15.8626L7.61905 15.8626C8.11866 15.9875 8.74317 16.1124 9.36769 16.1124C13.1148 16.1124 16.2373 13.1148 16.2373 9.36769C16.2373 5.62061 13.1148 2.49805 9.36769 2.49805C5.62061 2.49805 2.49805 5.49571 2.49805 9.24279C2.49805 10.7416 2.99766 12.2404 3.99688 13.3646C3.99688 13.4895 4.12178 13.4895 4.12178 13.6144Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                 </svg>
+                 <span class="hidden-mobile">Chat</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="about container">
+            <div class="about__mission">
+                <div class="about__mission-media">
+                 <img 
+                    src="./images/beekeeper.svg" 
+                    alt="Beekeeper" 
+                    width="800" height="490" loading="lazy"
+                    class="about__mission-image">
+                 <button 
+                  class="about__mission-button"
+                  type="button"
+                 >
+                 <img src="./images/icons/arrow-right.svg" alt="Next slide" class="about__mission-slide">
+                </button>
+                </div>
+                <div class="about__mission-content">
+                 <h2 class="about__mission-title">OUR<br> MISSION</h2>
+                 <p>The bees live as they naturally would and their benefits reach more people. Our goal is to raise  <b>San Diego’s bee population</b> throughout the city and at the same time <b>spread awareness among the community.</b></p>
+                 <p>Our hope is that these backyard hives will facilitate a dialogue among neighbours, friends, family and the community at large about the huge importance of bees.</p>
+                 <img 
+                  src="./images/signature.svg" 
+                  alt="Signature" 
+                  width="152" height="43" loading="lazy"
+                  class="about__mission-signature">
+                </div>
+            </div>
+            <div class="about__news">
+                <h2 class="about__news-title">
+                    NEWS
+                </h2>
+                <ul class="about__news-list">
+                    <li class="about__news-item">
+                        <time datetime="2020-05-14">May 14, 2020</time>
+                        <h3 class="about__news-subtitle">SWEET HONEY PACKS FRESH RAW AND UNFILTERED</h3>
+                        <p class="about__news-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur officia des.</p>
+                    </li>
+                     <li class="about__news-item">
+                        <time datetime="2020-05-14">May 14, 2020</time>
+                        <h3 class="about__news-subtitle">RAW BEE HONEY PRODUCTS AND BEEKEEPING</h3>
+                        <p class="about__news-desc">Dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia des null.</p>
+                    </li>
+                     <li class="about__news-item">
+                        <time datetime="2020-05-13">May 13, 2020</time>
+                        <h3 class="about__news-subtitle">BEES – HONEY BEES AND BEEKEEPING ONLINE GUIDE</h3>
+                        <p class="about__news-desc">Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint sunt in culpa qui officia des cupidatat non.</p>
+                    </li>
+                </ul>
+                <a href="/" class="about__news-button">SHOW MORE NEWS</a>
+            </div>
+        </section>
+
+        <section class="products container">
+            <div class="products__description">
+                <h2 class="products__title">OUR<br> PRODUCTS</h2>
+                <p class="products__desc">Check out our online shop for cute bee-themed apparel, unique bee suits,<br> educational tools, gift certificates and more.</p>
+            </div>
+            <div class="products__content">
+                <ul class="products__list">
+                    <li class="products__item">
+                        <article class="products__card">
+                            <div class="products__card-image">
+                                <img 
+                                src="./images/product1.svg" 
+                                alt="Heather Honey" 
+                                width="418" height="418" loading="lazy"
+                                class="products__card-img">
+                            </div>
+                            <h3 class="products__card-title">Heather<br> Honey</h3>
+                            <p class="products__card-price">$10.00</p>
+                            <p class="products__card-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <button 
+                             class="products__card-button"
+                             type="button"
+                            >
+                            <svg viewBox="0 0 20.9951 18.2762" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.995117" height="18.276169" fill="currentColor" customFrame="#000000">
+	                         <path id="Vector" d="M18.9583 14.8853L16.3367 14.8853L13.26 17.9837C12.8483 18.3737 12.22 18.3737 11.8083 17.9837C11.4183 17.572 11.4183 16.9437 11.8083 16.532L13.455 14.8853L7.54 14.8853L9.18667 16.532C9.57667 16.9437 9.57667 17.572 9.18667 17.9837C8.79667 18.3737 8.14667 18.3737 7.75667 17.9837L4.65833 14.8853L2.03667 14.8853C0.91 14.8853 0 13.9753 0 12.8487L0 9.81534C0 9.25201 0.455 8.79701 1.01833 8.79701L1.495 8.79701L2.49167 2.38367C2.68667 0.997006 3.87833 -0.0213274 5.28667 0.000339305L15.73 0.000339305C17.1167 -0.0213274 18.3083 0.997006 18.5033 2.38367L19.5 8.79701L19.9767 8.79701C20.54 8.79701 20.995 9.25201 20.995 9.81534L20.995 12.8487C20.995 13.9753 20.085 14.8853 18.9583 14.8853ZM2.03667 10.8337L2.03667 12.8487L18.9583 12.8487L18.9583 10.8337L2.03667 10.8337ZM17.4417 8.79701L16.51 2.68701C16.445 2.29701 16.12 2.01534 15.73 2.01534L5.28667 2.01534C4.89667 2.01534 4.55 2.29701 4.50667 2.68701L3.55333 8.79701L17.4417 8.79701ZM6.78167 4.39867L6.78167 6.41367C6.78167 6.97701 7.23667 7.43201 7.8 7.43201C8.34167 7.43201 8.79667 6.97701 8.79667 6.41367L8.79667 4.39867C8.79667 3.83534 8.34167 3.38034 7.8 3.38034C7.23667 3.38034 6.78167 3.83534 6.78167 4.39867ZM11.505 4.39867L11.505 6.41367C11.505 6.97701 11.96 7.43201 12.5233 7.43201C13.0867 7.43201 13.5417 6.97701 13.5417 6.41367L13.5417 4.39867C13.5417 3.83534 13.0867 3.38034 12.5233 3.38034C11.96 3.38034 11.505 3.83534 11.505 4.39867Z" fill="rgb(91,88,88)" fill-rule="nonzero" transform="matrix(1,0,0,-1,0,18.2762)" />
+                            </svg>
+                             <span>ADD TO<br> CART</span>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="products__card">
+                            <div class="products__card-image">
+                                <span class="products__card-badge">NEW</span>
+                                <img 
+                                src="./images/product2.svg" 
+                                alt="Jarrah Honey" 
+                                width="418" height="418" loading="lazy"
+                                class="products__card-img">
+                            </div>
+                            <h3 class="products__card-title">Jarrah<br> Honey</h3>
+                            <p class="products__card-price">$15.00</p>
+                            <p class="products__card-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <button 
+                             class="products__card-button"
+                             type="button"
+                            >
+                            <svg viewBox="0 0 20.9951 18.2762" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.995117" height="18.276169" fill="currentColor" customFrame="#000000">
+	                         <path id="Vector" d="M18.9583 14.8853L16.3367 14.8853L13.26 17.9837C12.8483 18.3737 12.22 18.3737 11.8083 17.9837C11.4183 17.572 11.4183 16.9437 11.8083 16.532L13.455 14.8853L7.54 14.8853L9.18667 16.532C9.57667 16.9437 9.57667 17.572 9.18667 17.9837C8.79667 18.3737 8.14667 18.3737 7.75667 17.9837L4.65833 14.8853L2.03667 14.8853C0.91 14.8853 0 13.9753 0 12.8487L0 9.81534C0 9.25201 0.455 8.79701 1.01833 8.79701L1.495 8.79701L2.49167 2.38367C2.68667 0.997006 3.87833 -0.0213274 5.28667 0.000339305L15.73 0.000339305C17.1167 -0.0213274 18.3083 0.997006 18.5033 2.38367L19.5 8.79701L19.9767 8.79701C20.54 8.79701 20.995 9.25201 20.995 9.81534L20.995 12.8487C20.995 13.9753 20.085 14.8853 18.9583 14.8853ZM2.03667 10.8337L2.03667 12.8487L18.9583 12.8487L18.9583 10.8337L2.03667 10.8337ZM17.4417 8.79701L16.51 2.68701C16.445 2.29701 16.12 2.01534 15.73 2.01534L5.28667 2.01534C4.89667 2.01534 4.55 2.29701 4.50667 2.68701L3.55333 8.79701L17.4417 8.79701ZM6.78167 4.39867L6.78167 6.41367C6.78167 6.97701 7.23667 7.43201 7.8 7.43201C8.34167 7.43201 8.79667 6.97701 8.79667 6.41367L8.79667 4.39867C8.79667 3.83534 8.34167 3.38034 7.8 3.38034C7.23667 3.38034 6.78167 3.83534 6.78167 4.39867ZM11.505 4.39867L11.505 6.41367C11.505 6.97701 11.96 7.43201 12.5233 7.43201C13.0867 7.43201 13.5417 6.97701 13.5417 6.41367L13.5417 4.39867C13.5417 3.83534 13.0867 3.38034 12.5233 3.38034C11.96 3.38034 11.505 3.83534 11.505 4.39867Z" fill="rgb(91,88,88)" fill-rule="nonzero" transform="matrix(1,0,0,-1,0,18.2762)" />
+                            </svg>
+                             <span>ADD TO<br> CART</span>
+                            </button>
+                        </article>
+                    </li>
+                    <li class="products__item">
+                        <article class="products__card">
+                            <div class="products__card-image">
+                                <img 
+                                src="./images/product3.svg" 
+                                alt="Linden Honey" 
+                                width="418" height="418" loading="lazy"
+                                class="products__card-img">
+                            </div>
+                            <h3 class="products__card-title">Linden<br> Honey</h3>
+                            <p class="products__card-price">$20.00</p>
+                            <p class="products__card-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <button 
+                             class="products__card-button"
+                             type="button"
+                            >
+                            <svg viewBox="0 0 20.9951 18.2762" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.995117" height="18.276169" fill="currentColor" customFrame="#000000">
+	                         <path id="Vector" d="M18.9583 14.8853L16.3367 14.8853L13.26 17.9837C12.8483 18.3737 12.22 18.3737 11.8083 17.9837C11.4183 17.572 11.4183 16.9437 11.8083 16.532L13.455 14.8853L7.54 14.8853L9.18667 16.532C9.57667 16.9437 9.57667 17.572 9.18667 17.9837C8.79667 18.3737 8.14667 18.3737 7.75667 17.9837L4.65833 14.8853L2.03667 14.8853C0.91 14.8853 0 13.9753 0 12.8487L0 9.81534C0 9.25201 0.455 8.79701 1.01833 8.79701L1.495 8.79701L2.49167 2.38367C2.68667 0.997006 3.87833 -0.0213274 5.28667 0.000339305L15.73 0.000339305C17.1167 -0.0213274 18.3083 0.997006 18.5033 2.38367L19.5 8.79701L19.9767 8.79701C20.54 8.79701 20.995 9.25201 20.995 9.81534L20.995 12.8487C20.995 13.9753 20.085 14.8853 18.9583 14.8853ZM2.03667 10.8337L2.03667 12.8487L18.9583 12.8487L18.9583 10.8337L2.03667 10.8337ZM17.4417 8.79701L16.51 2.68701C16.445 2.29701 16.12 2.01534 15.73 2.01534L5.28667 2.01534C4.89667 2.01534 4.55 2.29701 4.50667 2.68701L3.55333 8.79701L17.4417 8.79701ZM6.78167 4.39867L6.78167 6.41367C6.78167 6.97701 7.23667 7.43201 7.8 7.43201C8.34167 7.43201 8.79667 6.97701 8.79667 6.41367L8.79667 4.39867C8.79667 3.83534 8.34167 3.38034 7.8 3.38034C7.23667 3.38034 6.78167 3.83534 6.78167 4.39867ZM11.505 4.39867L11.505 6.41367C11.505 6.97701 11.96 7.43201 12.5233 7.43201C13.0867 7.43201 13.5417 6.97701 13.5417 6.41367L13.5417 4.39867C13.5417 3.83534 13.0867 3.38034 12.5233 3.38034C11.96 3.38034 11.505 3.83534 11.505 4.39867Z" fill="rgb(91,88,88)" fill-rule="nonzero" transform="matrix(1,0,0,-1,0,18.2762)" />
+                            </svg>
+                             <span>ADD TO<br> CART</span>
+                            </button>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="reviews container">
+            <div class="reviews__main">
+                <div class="reviews__media">
+                    <img 
+                    src="./images/quote-image.svg" 
+                    alt="" 
+                    width="300" height="320" loading="lazy"
+                    class="reviews__image">
+                    <span class="reviews__media-badge">
+                        <svg viewBox="0 0 44.375 35.145" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.375000" height="35.145020" fill="currentColor" customFrame="#000000">
+	                     <path id="Vector" d="M13.845 35.0858L6.44917 35.145C2.89917 35.145 0 32.2458 0 28.6367L0 21.2408C0 17.6908 2.89917 14.7917 6.44917 14.7917L14.4958 14.7917C13.9042 10.5908 11.1825 7.04083 7.33667 5.325C6.09417 4.85167 5.325 3.55 5.56167 2.24833C5.8575 0.946667 6.98167 0 8.3425 0C8.63833 0 8.99333 0.0591667 9.34833 0.1775C16.9217 3.13583 20.3533 11.005 20.3533 17.5725L20.3533 28.6367C20.3533 32.2458 17.4542 35.145 13.845 35.0858ZM37.9258 35.0858L30.53 35.145C26.9208 35.145 24.0217 32.2458 24.0217 28.6367L24.0217 21.2408C24.0217 17.6908 26.9208 14.7917 30.53 14.7917L38.5175 14.7917C37.9258 10.5908 35.2042 7.04083 31.3583 5.325C30.1158 4.85167 29.3467 3.55 29.6425 2.24833C29.8792 0.946667 31.0033 0 32.3642 0C32.7192 0 33.015 0.0591667 33.37 0.1775C40.9433 3.13583 44.375 11.005 44.375 17.5725L44.375 28.6367C44.375 32.2458 41.4758 35.145 37.9258 35.0858ZM5.56167 21.2408L5.56167 28.6367C5.56167 29.1692 5.97583 29.5833 6.44917 29.5833L13.845 29.5833C14.3775 29.5833 14.7917 29.1692 14.7917 28.6367L14.7917 20.3533L6.44917 20.3533C5.97583 20.3533 5.56167 20.7083 5.56167 21.2408ZM29.5833 21.2408L29.5833 28.6367C29.5833 29.1692 29.9975 29.5833 30.53 29.5833L37.9258 29.5833C38.3992 29.5833 38.8133 29.1692 38.8133 28.6367L38.8133 20.3533L30.53 20.3533C29.9975 20.3533 29.5833 20.7083 29.5833 21.2408Z" fill="rgb(255,255,255)" fill-rule="nonzero" transform="matrix(1,0,0,-1,0,35.145)" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="reviews__content">
+                    <blockquote class="reviews__quote">
+                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi."</p>
+                    </blockquote>
+                    <div class="reviews__author">
+                        <span class="reviews__author-name">JULIA KLEIN</span>
+                        <span class="reviews__author-role">BIOLOGIST</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery container">
+            <div class="gallery__description">
+                <h2 class="gallery__title">OUR<br> GALLERY</h2>
+                <p class="gallery__desc">Mellifera is a true beehive of activity! Check out the latest news and events in our<br> image gallery and see for yourself.</p>
+            </div>
+            <div class="gallery__media">
+                <ul class="gallery__media-list">
+                    <li class="gallery__media-item">
+                        <img 
+                        src="./images/gallery-1.svg" 
+                        alt="Beekeeper with honeycomb" 
+                        width="420" height="270" loading="lazy"
+                        class="gallery__media-image">
+                    </li>
+                    <li class="gallery__media-item">
+                        <img 
+                        src="./images/gallery-2.svg" 
+                        alt="Macro shot of bees on honeycomb" 
+                        width="420" height="270" loading="lazy"
+                        class="gallery__media-image">
+                    </li>
+                    <li class="gallery__media-item">
+                        <img 
+                        src="./images/gallery-3.svg" 
+                        alt="Beekeeper" 
+                        width="420" height="270" loading="lazy"
+                        class="gallery__media-image">
+                    </li>
+                    <li class="gallery__media-item">
+                        <img 
+                        src="./images/gallery-4.svg" 
+                        alt="A bee on a flower" 
+                        width="420" height="270" loading="lazy"
+                        class="gallery__media-image">
+                    </li>
+                    <li class="gallery__media-item">
+                        <img 
+                        src="./images/gallery-5.svg" 
+                        alt="Beekeepers collect honey" 
+                        width="420" height="270" loading="lazy"
+                        class="gallery__media-image">
+                    </li>
+                    <li class="gallery__media-item">
+                        <img 
+                        src="./images/gallery-6.svg" 
+                        alt="A jar of honey on the table" 
+                        width="420" height="270" loading="lazy"
+                        class="gallery__media-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="subscribe container">
+            <div class="subscribe__media">
+                <img 
+                src="./images/subscribe.svg" 
+                alt="A jar of honey" 
+                width="590" height="615" loading="lazy"
+                class="subscribe__image">
+            </div>
+            <div class="subscribe__content">
+                <h2 class="subscribe__content-title">NEWSLETTER SIGN<br> UP</h2>
+                <p class="subscribe__content-desc">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem dolores.</p>
+                <form class="subscribe__form">
+                    <div class="subscribe__form-field">
+                        <label for="email" class="subscribe__form-label visually-hidden">Email Address</label>
+                        <input 
+                        type="text"
+                        id="email" 
+                        placeholder="Email Address"
+                        required
+                        class="subscribe__form-input">
+                    </div>
+                    <button 
+                     class="subscribe__form-button"
+                     type="button"
+                    >
+                     SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="types container">
+            <div class="types__description">
+                <h2 class="types__title">TYPES OF <br> HONEY</h2>
+                <p class="types__desc">Learn more about some of the products we take special pride in.</p>
+            </div>
+            <div class="types__content">
+                <ul class="types__content-list">
+                    <li class="types__content-item">
+                        <article class="types__content-card">
+                            <div class="types__content-media">
+                                <img 
+                                src="./images/type-honey-1.svg" 
+                                alt="" 
+                                width="155" height="160" loading="lazy"
+                                class="types__content-image">
+                            </div>
+                            <div class="types__content-text">
+                                <h3 class="types__content-title">FOREST<br> HONEY</h3>
+                                <p class="types__content-desc">Id fierent ullamcorper concludaturque mei. Sed summo admodum honestatis ad Id fierent.</p>
+                                <a href="/" class="types__content-link">LEARN MORE</a>
+                            </div>                          
+                        </article>
+                    </li>
+                    <li class="types__content-item">
+                        <article class="types__content-card">
+                            <div class="types__content-media">
+                                <img 
+                                src="./images/type-honey-2.svg" 
+                                alt="" 
+                                width="155" height="160" loading="lazy"
+                                class="types__content-image">
+                            </div>
+                             <div class="types__content-text">
+                                <h3 class="types__content-title">CREAMED <br> HONEY</h3>
+                                <p class="types__content-desc">Id fierent ullamcorper concludaturque mei. Sed summo admodum honestatis ad Id fierent.</p>
+                                <a href="/" class="types__content-link">LEARN MORE</a>
+                            </div>                          
+                        </article>
+                    </li>
+                    <li class="types__content-item">
+                        <article class="types__content-card">
+                            <div class="types__content-media">
+                                <img 
+                                src="./images/type-honey-3.svg" 
+                                alt="" 
+                                width="155" height="160" loading="lazy"
+                                class="types__content-image">
+                            </div>
+                            <div class="types__content-text">
+                                <h3 class="types__content-title">MEADOW<br> HONEY</h3>
+                                <p class="types__content-desc">Id fierent ullamcorper concludaturque mei. Sed summo admodum honestatis ad Id fierent.</p>
+                                <a href="/" class="types__content-link">LEARN MORE</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="types__content-item">
+                        <article class="types__content-card">
+                            <div class="types__content-media">
+                                <img 
+                                src="./images/type-honey-4.svg" 
+                                alt="" 
+                                width="155" height="160" loading="lazy"
+                                class="types__content-image">
+                            </div>
+                            <div class="types__content-text">
+                                <h3 class="types__content-title">LIQUID<br> HONEY</h3>
+                                <p class="types__content-desc">Id fierent ullamcorper concludaturque mei. Sed summo admodum honestatis ad Id fierent.</p>
+                                <a href="/" class="types__content-link">LEARN MORE</a>
+                            </div>                          
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <nav class="footer__soc1als">
+            <ul class="footer__soc1als-list">
+                <li class="footer__soc1als-item">
+                    <a href="/" class="footer__soc1als-link">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg viewBox="0 0 35.2002 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.200195" height="36.000000" fill="none" customFrame="#000000">
+	                     <path id="" d="M21.7836 19.125L22.2758 15.8906L19.1469 15.8906L19.1469 13.7812C19.1469 12.8672 19.5688 12.0234 20.975 12.0234L22.4164 12.0234L22.4164 9.24609C22.4164 9.24609 21.1156 9 19.8852 9C17.3188 9 15.6313 10.582 15.6313 13.3945L15.6313 15.8906L12.7484 15.8906L12.7484 19.125L15.6313 19.125L15.6313 27L19.1469 27L19.1469 19.125L21.7836 19.125Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__soc1als-item">
+                    <a href="/" class="footer__soc1als-link">
+                        <span class="visually-hidden">Instagram</span>
+                        <svg viewBox="0 0 35.2002 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.200195" height="36.000000" fill="none" customFrame="#000000">
+	                     <path id="" d="M17.6 13.957C15.35 13.957 13.557 15.7852 13.557 18C13.557 20.25 15.35 22.043 17.6 22.043C19.8148 22.043 21.643 20.25 21.643 18C21.643 15.7852 19.8148 13.957 17.6 13.957ZM17.6 20.6367C16.1586 20.6367 14.9633 19.4766 14.9633 18C14.9633 16.5586 16.1234 15.3984 17.6 15.3984C19.0414 15.3984 20.2016 16.5586 20.2016 18C20.2016 19.4766 19.0414 20.6367 17.6 20.6367ZM22.7328 13.8164C22.7328 13.2891 22.3109 12.8672 21.7836 12.8672C21.2563 12.8672 20.8344 13.2891 20.8344 13.8164C20.8344 14.3438 21.2563 14.7656 21.7836 14.7656C22.3109 14.7656 22.7328 14.3438 22.7328 13.8164ZM25.4047 14.7656C25.3344 13.5 25.0531 12.375 24.1391 11.4609C23.225 10.5469 22.1 10.2656 20.8344 10.1953C19.5336 10.125 15.6313 10.125 14.3305 10.1953C13.0648 10.2656 11.975 10.5469 11.0258 11.4609C10.1117 12.375 9.83047 13.5 9.76016 14.7656C9.68984 16.0664 9.68984 19.9688 9.76016 21.2695C9.83047 22.5352 10.1117 23.625 11.0258 24.5742C11.975 25.4883 13.0648 25.7695 14.3305 25.8398C15.6313 25.9102 19.5336 25.9102 20.8344 25.8398C22.1 25.7695 23.225 25.4883 24.1391 24.5742C25.0531 23.625 25.3344 22.5352 25.4047 21.2695C25.475 19.9688 25.475 16.0664 25.4047 14.7656ZM23.7172 22.6406C23.4711 23.3438 22.9086 23.8711 22.2406 24.1523C21.1859 24.5742 18.725 24.4688 17.6 24.4688C16.4398 24.4688 13.9789 24.5742 12.9594 24.1523C12.2563 23.8711 11.7289 23.3438 11.4477 22.6406C11.0258 21.6211 11.1313 19.1602 11.1313 18C11.1313 16.875 11.0258 14.4141 11.4477 13.3594C11.7289 12.6914 12.2563 12.1641 12.9594 11.8828C13.9789 11.4609 16.4398 11.5664 17.6 11.5664C18.725 11.5664 21.1859 11.4609 22.2406 11.8828C22.9086 12.1289 23.4359 12.6914 23.7172 13.3594C24.1391 14.4141 24.0336 16.875 24.0336 18C24.0336 19.1602 24.1391 21.6211 23.7172 22.6406Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__soc1als-item">
+                    <a href="/" class="footer__soc1als-link">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg viewBox="0 0 35.2002 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.200195" height="36.000000" fill="none" customFrame="#000000">
+	                     <path id="" d="M24.7367 14.3438C25.4398 13.8164 26.0727 13.1836 26.5648 12.4453C25.932 12.7266 25.1938 12.9375 24.4555 13.0078C25.2289 12.5508 25.7914 11.8477 26.0727 10.9688C25.3695 11.3906 24.5609 11.707 23.7523 11.8828C23.0492 11.1445 22.1 10.7227 21.0453 10.7227C19.0063 10.7227 17.3539 12.375 17.3539 14.4141C17.3539 14.6953 17.3891 14.9766 17.4594 15.2578C14.4008 15.082 11.6586 13.6055 9.83047 11.3906C9.51406 11.918 9.33828 12.5508 9.33828 13.2539C9.33828 14.5195 9.97109 15.6445 10.9906 16.3125C10.393 16.2773 9.79531 16.1367 9.30313 15.8555L9.30313 15.8906C9.30313 17.6836 10.5688 19.1602 12.2563 19.5117C11.975 19.582 11.6234 19.6523 11.307 19.6523C11.0609 19.6523 10.85 19.6172 10.6039 19.582C11.0609 21.0586 12.432 22.1133 14.0492 22.1484C12.7836 23.1328 11.2016 23.7305 9.47891 23.7305C9.1625 23.7305 8.88125 23.6953 8.6 23.6602C10.2172 24.7148 12.1508 25.3125 14.2602 25.3125C21.0453 25.3125 24.7367 19.7227 24.7367 14.8359C24.7367 14.6602 24.7367 14.5195 24.7367 14.3438Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__logo">
+            <img 
+            src="./images/footer-logo.svg" 
+            alt="Mellifera" 
+            width="40" height="28" loading="lazy"
+            class="footer__logo-image">
+        </div>
+        <p class="footer__copyright">© <time datetime="2020">2020</time> Qode Interactive <a href="/">All Rights Reserved</a></p>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button 
+             class="mobile-overlay__close-button cross-button"
+             type="submit"
+            >
+             <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Home</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Pages</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Products</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Blog</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Portfolio</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="/" class="mobile-overlay__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
+</body>
+</html>

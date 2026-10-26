@@ -1,0 +1,100 @@
+.types {
+    padding-top: 60px;
+
+     &__description {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 1.14;
+
+        @include tablet {
+            font-size: 32px;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+
+        @include tablet {
+            font-size: 15px;
+        }
+    }
+    
+
+    &__content {
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            @include tablet {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        &-card {
+            display: flex;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        &-item {
+            background-color: var(--color-light);
+            padding: 30px 55px;
+
+            @include mobile {
+                padding: 20px 30px;
+            }
+        }
+
+        &-media {
+            max-width: 155px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        &-text {
+            padding-left: 45px;
+            display: flex;
+            flex-direction: column;
+
+            @include mobile {
+                padding-left: 0;
+            }
+        }
+
+        &-title {
+            font-size: 26px;
+            line-height: 1.23;
+        }
+
+        &-desc {
+            font-size: 15px;
+        }
+
+        &-link {
+            padding: 10px;
+            padding-left: 0;
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 13px;
+
+            @include hover {
+                color: var(--color-dark);
+            }
+
+            @include mobile {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

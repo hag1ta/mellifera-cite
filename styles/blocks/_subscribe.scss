@@ -1,0 +1,115 @@
+.subscribe {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    &__media {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &__content {
+        &-title {
+            font-size: 48px;
+
+            @include desktop {
+                font-size: 40px;
+            }
+
+            @include tablet {
+                font-size: 32px;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+
+            
+        }
+
+        &-desc {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            max-width: 560px;
+
+            @include tablet {
+                font-size: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    &__form {
+        display: flex;
+        gap: 7px;
+
+        @include tablet {
+            flex-direction: column;
+            gap: 17px;
+        }
+
+
+        &-input {
+            padding: 18px;
+            width: 418px;
+            height: 62px;
+            border: 1px solid var(--color-gray);
+            outline: none;
+
+            @include hover {
+                border-color: var(--color-accent);
+            }
+
+            @include desktop {
+                width: 300px;
+            }
+
+            @include tablet {
+                width: 100%;
+  
+            }
+        }
+
+        &-input::placeholder {
+            color: var(--color-gray);
+        }
+
+        &-input:focus {
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+        }
+
+        &-button {
+            width: 205px;
+            height: 62px;
+            background-color: var(--color-accent);
+            color: var(--color-light);
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 2px;
+            border: 1px solid transparent;
+
+            @include hover {
+                background-color: transparent;
+                border-color: var(--color-accent);
+                color: var(--color-accent);
+            }
+
+            @include desktop {
+                width: 300px;
+            }
+
+            @include tablet {
+                width: 100%;
+            }
+        }
+    }
+}
